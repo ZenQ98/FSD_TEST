@@ -1,5 +1,5 @@
-# Prueba Técnica Full Stack Developer
-Prueba técnica Full Stack Developer - Daniel Blázquez Escobar
+# Prueba Técnica Full Stack Developer - Daniel Blázquez Escobar
+<br>
 ## Exercice 1
 Write a single SQL query which returns:<br>
 a. The region Name.<br>
