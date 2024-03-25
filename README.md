@@ -7,7 +7,7 @@ b. The average sales per employee for the region (Sales per region / Num of
 employees)<br>
 c. The difference between the average sales of the region and the highest average
 sales, and the average sales per employee for the region.
-<br><br>
+
 Note: The resulting query should have 4 columns. Employees can have multiple sales; A region
 could have no sales.<br>
 <br>
@@ -33,3 +33,14 @@ GROUP BY
 ```
 
 ![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/41159081-dece-41b0-8a2a-0a3b6bef8ef7)
+
+## Exercice 2
+Following the DB structure of the previous question. Initialize a spring boot project which allows
+the user to:<br>
+a. List employees.<br>
+b. Get Sales for a certain employee.<br>
+c. Add a new sale.<br>
+
+This information should be exposed over a REST Controller and using H2 memory based DB
+to consume it. You can use Spring Boot initializer for creating the main structure of the project.
+Include all the comments you may consider explaining your decisions.
