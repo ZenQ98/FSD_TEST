@@ -1,5 +1,5 @@
 # Prueba Técnica Full Stack Developer - Daniel Blázquez Escobar
-<br>
+
 ## Exercice 1
 Write a single SQL query which returns:<br>
 a. The region Name.<br>
