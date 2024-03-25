@@ -1,5 +1,38 @@
 USE exercice1;
 
+CREATE TABLE `employees` (
+  `ID` int NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `STATE_ID` int NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `fk_employees_states_idx` (`STATE_ID`),
+  CONSTRAINT `fk_employees_states` FOREIGN KEY (`STATE_ID`) REFERENCES `states` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `regions` (
+  `ID` int NOT NULL,
+  `NAME` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `sales` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `AMOUNT` int NOT NULL,
+  `EMPLOYEE_ID` int NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `fk_sales_employees1_idx` (`EMPLOYEE_ID`),
+  CONSTRAINT `fk_sales_employees1` FOREIGN KEY (`EMPLOYEE_ID`) REFERENCES `employees` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `states` (
+  `ID` int NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `REGION_ID` int NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `fk_states_regions1_idx` (`REGION_ID`),
+  CONSTRAINT `fk_states_regions1` FOREIGN KEY (`REGION_ID`) REFERENCES `regions` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 -- Tabla REGIONS
 INSERT INTO REGIONS (id, name) VALUES
 (1, 'Andalucía'),
