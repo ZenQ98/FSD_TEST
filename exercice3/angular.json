@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "exercice3": {
+    "Exercice3": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "exercice3:build:production"
+              "buildTarget": "Exercice3:build:production"
             },
             "development": {
-              "buildTarget": "exercice3:build:development"
+              "buildTarget": "Exercice3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "exercice3:build"
+            "buildTarget": "Exercice3:build"
           }
         },
         "test": {
