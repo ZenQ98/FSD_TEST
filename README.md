@@ -71,3 +71,20 @@ o Make it responsive (Use your preferred UI component library to make it easier)
 
 Resources:<br>
 • [CarQuery API documentation](https://www.carqueryapi.com/documentation/).<br>
+
+Models:<br>
+![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/18e7d066-7f9c-4a0e-8ea9-86e41194d833)
+
+Trims:<br>
+![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/a975cc66-7c3e-4e4e-8b56-d59e35e5edf7)
+
+Detail<br>
+![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/a561bfe6-b047-4350-b897-dfe645940b1d)
+
+Search/Filter:<br>
+![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/cfaa2c7c-a724-47e4-aace-59c747c00b2d)
+
+Responsive:<br>
+![image](https://github.com/ZenQ98/FSD_TEST/assets/143850708/5c6fdf4f-a89d-463d-9005-616b2091427f)
+
+
