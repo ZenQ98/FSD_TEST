@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <h1> Models Detail </h1>
+    <hr>
+    <div class="column">
+        <div *ngIf="trimDetails && trimDetails.length">
+            <div *ngFor="let trim of trimDetails">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ trim.model_name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ trim.model_id }}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ trim.model_trim }}</h6>
+                        <p>Maker: {{ trim.model_make_id}}</p>
+                        <p>Year: {{ trim.model_year }}</p>  
+                        <p>Body: {{ trim.model_body }}</p>
+                        <p>Engine Fuel: {{ trim.model_engine_fuel }}</p>
+                        <p>Top Speed: {{ trim.model_top_speed_kph }}</p>
+                        <p>Transmission: {{ trim.model_transmission_type }}</p>
+                        <p>Contry: {{ trim.make_country }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

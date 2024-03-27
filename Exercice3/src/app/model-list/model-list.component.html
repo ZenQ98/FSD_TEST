@@ -1,0 +1,9 @@
+<div class="container my-5">
+    <h1> Car Models</h1>
+    <hr>
+    <div class="row">
+        <div *ngFor="let model of models" class="col-x-4 col-sm-6 col-xs-12">
+            <a [routerLink]="['/models', model.model_name, 'trims']">{{ model.model_name }}</a>
+        </div>
+    </div>
+</div>

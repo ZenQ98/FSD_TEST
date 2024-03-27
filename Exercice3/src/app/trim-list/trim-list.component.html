@@ -1,0 +1,9 @@
+<div class="container my-5">
+  <h1> Model Style</h1>
+  <hr>
+  <div class="column">
+    <div *ngFor="let trim of trims" class="col-x-4 col-sm-6 col-xs-12">
+      <a [routerLink]="['/models', modelId, 'trims', trim.model_trim]">{{ trim.model_trim }}</a>
+    </div>
+  </div>
+</div>
