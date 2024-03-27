@@ -1,8 +1,11 @@
 <div class="container my-5">
     <h1> Car Models</h1>
     <hr>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Model Name.." aria-label="Model Name.." aria-describedby="basic-addon2" #filter (input)="applyFilter(filter.value)">
+    </div>    
     <div class="row">
-        <div *ngFor="let model of models" class="col-x-4 col-sm-6 col-xs-12">
+        <div *ngFor="let model of filteredModels" class="col-x-4 col-sm-6 col-xs-12">
             <a [routerLink]="['/models', model.model_name, 'trims']">{{ model.model_name }}</a>
         </div>
     </div>

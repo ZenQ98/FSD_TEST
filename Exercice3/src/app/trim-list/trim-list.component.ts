@@ -17,6 +17,7 @@ export class TrimListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private trimService: TrimService) { }
 
+  // Pedir acabados por modelo
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.modelId = params.get('modelId')!;

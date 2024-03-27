@@ -11,16 +11,16 @@ export class TrimService {
 
   constructor(private http: HttpClient) { }
 
+  // Acabados del modelo en concreto
   getTrims(make: string, modelId: string): Observable<any> {
     const url = `${this.baseUrl}&make=${make}&model=${modelId}`;
     return this.http.jsonp(url, 'callback');
   }
 
+  // Filtro por Acabado
   getTrimDetails(make: string, modelId: string, trimId: string): Observable<any[]> {
-    // Fetch all trims for the given model
     return this.getTrims(make, modelId).pipe(
       map((response: any) => {
-        // Filter the trims array to find all trims with the desired trimId
         return response.Trims.filter((trim: any) => trim.model_trim === trimId);
       })
     );

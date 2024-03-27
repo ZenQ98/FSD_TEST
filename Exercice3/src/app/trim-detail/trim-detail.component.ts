@@ -18,6 +18,7 @@ export class TrimDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private trimService: TrimService) { }
 
+  // Al iniciar pedir acabados del modelo seleccionado
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.modelId = params.get('modelId')!;
@@ -26,6 +27,7 @@ export class TrimDetailComponent implements OnInit {
     });
   }
 
+  // Recoger la información del acabado seleccionado
   getTrimDetails(): void {
     this.trimService.getTrimDetails(this.make,this.modelId, this.trimId)
       .subscribe((trim: any) => {

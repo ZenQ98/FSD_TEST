@@ -11,6 +11,7 @@ export class ModelService {
   
   constructor(private http: HttpClient) { }
 
+  // Se recogen todos los modelos
   getModels(make: string): Observable<any> {
     const url = `${this.baseUrl}&make=${make}`;
     return this.http.jsonp(url, 'callback').pipe(
