@@ -1,4 +1,4 @@
-# Prueba Técnica Full Stack Developer - Daniel Blázquez Escobar
+# Prueba Técnica Full Stack Developer - Daniel B.E
 
 ## Exercice 1
 Write a single SQL query which returns:<br>
@@ -11,7 +11,7 @@ sales, and the average sales per employee for the region.
 Note: The resulting query should have 4 columns. Employees can have multiple sales; A region
 could have no sales.<br>
 <br>
-Utilizaremos la siguiente sentencia SQL:
+SQL:
 
 ```
 SELECT 
